@@ -31,13 +31,13 @@ local sw, sh = getScreenResolution()
 
 update_state = false
 
-local script_vers = 1
-local script_vers_text = "1.00"
+local script_vers = 2
+local script_vers_text = "1.05"
 
 local update_url = "https://raw.githubusercontent.com/tfornik/mafiahelper/main/update.ini"
 local update_path = getWorkingDirectory() .. "/update.ini"
 
-local script_url = ""
+local script_url = "https://github.com/tfornik/mafiahelper/raw/main/mafiahelper.lua"
 local script_path = thisScript().path
 
 function main()
@@ -129,7 +129,7 @@ function main()
 
  if result then -- если диалог открыт
  		if button == 1 then -- если нажата первая кнопка (Выбрать)
- 				sampAddChatMessage("[MafiaHelper] Спасибо <3", 0xFF0000)
+ 				sampAddChatMessage("[MafiaHelper] Спасибо ", 0xFF0000)
  		else -- если нажата вторая кнопка (Закрыть)
  				sampAddChatMessage("[MafiaHelper] Не понял? Ну и ладна", 0xFF0000)
  end
